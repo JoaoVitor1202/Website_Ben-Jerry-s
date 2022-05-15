@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>BEN&JERRY'S</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><span>Ben&</span>Jerry's</a>
+            <div class="toggle"></div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> O Sorvete mais <br>Pedaçudo do <span>Pedaço.</span></h2>
+                <p>Quem são Ben e Jerry?
+                    Ben & Jerry's Homemade Holdings, Inc. ou mais popularmente conhecida como Ben & Jerry's, é uma
+                    empresa norte-americana e uma divisão do conglomerado Unilever, que produz sorvetes, iogurtes e
+                    bolos. A empresa é sediada na cidade de Burlington e tem uma fábrica em Waterbury, Vermont.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/img2.png" class="BenJerrys">
+            </div>
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/Cookie.png" onclick="imgSlider('img/img2.png');chargeColor('rgb(186, 189, 11)') "></li>
+            <li><img src="./img/Cream.png" onclick="imgSlider('img/img3.png');chargeColor('rgb(131, 126, 117)')"></li>
+            <li><img src="./img/strawberry.png" onclick="imgSlider('img/img7.png');chargeColor('rgb(235, 64, 121)')">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook.png"></a></li>
+            <li><a href="#"><img src="./img/twitter.png"></a></li>
+            <li><a href="#"><img src="./img/instagram.png"></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.BenJerrys').src = anything;
+        }
+
+        function chargeColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
